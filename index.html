@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revinate Form</title>
+    <style>
+      .sign-up-btn {
+        margin-top: 0.5rem;
+      }
+    </style>
+    <script
+      type="text/javascript"
+      src="//contact-api.inguest.com/bundles/revinatecontactapi/js/revinate-form.js?v=1"
+    ></script>
+  </head>
+  <body>
+    <form
+      id="revinate_contact_api_form"
+      token="123456"
+      onsubmit="revFormOnSubmit(); event.preventDefault();"
+    >
+      <fieldset>
+        <legend>iframe testing</legend>
+        <div>
+          <label for="email">Email</label>
+          <input class="long" type="email" name="email" id="email" required />
+        </div>
+
+        <div class="button">
+          <button type="submit" class="sign-up-btn">Sign Up</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
