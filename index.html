@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revinate Form</title>
     <style>
+      .form {
+        margin-top: 1.5rem;
+      }
       .sign-up-btn {
         margin-top: 0.5rem;
+      }
+      label {
+        display: block;
+        color: red;
       }
     </style>
     <script
@@ -20,6 +27,7 @@
       id="revinate_contact_api_form"
       token="123456"
       onsubmit="revFormOnSubmit(); event.preventDefault();"
+      class="form"
     >
       <fieldset>
         <legend>iframe testing</legend>
