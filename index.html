@@ -12,9 +12,27 @@
       .sign-up-btn {
         margin-top: 0.5rem;
       }
+      .form-field {
+        margin: 1rem 0;
+      }
       label {
         display: block;
-        color: red;
+        margin-bottom: 0.1rem;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+      }
+      button {
+        background-color: inherit;
+        border: 1px solid black;
+        margin-top: 25rem;
+        padding: 0.5rem;
+      }
+      body {
+        display: flex;
+        justify-content: center;
       }
     </style>
     <script
@@ -29,17 +47,40 @@
       onsubmit="revFormOnSubmit(); event.preventDefault();"
       class="form"
     >
-      <fieldset>
-        <legend>iframe testing</legend>
-        <div>
-          <label for="email">Email</label>
-          <input class="long" type="email" name="email" id="email" required />
-        </div>
+      <div class="form-field">
+        <label for="first">First</label>
+        <input
+          type="text"
+          name="first"
+          id="first"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="last">Last</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="off"
+          required
+        />
+      </div>
 
-        <div class="button">
-          <button type="submit" class="sign-up-btn">Sign Up</button>
-        </div>
-      </fieldset>
+      <div class="button">
+        <button type="submit" class="sign-up-btn">Sign Up</button>
+      </div>
     </form>
   </body>
 </html>
